@@ -3604,7 +3604,7 @@ body.is-ie header.majorBlack > h1:after {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/bannerBack.jpg");
+		background-image: url("../../images/bannerback.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3769,7 +3769,7 @@ body.is-ie header.majorBlack > h1:after {
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				background-image: url("../../images/bannerBack.jpg");
+				background-image: url("../../images/bannerback.jpg");
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -3841,7 +3841,7 @@ body.is-ie header.majorBlack > h1:after {
 /* Main */
 	#main {
 		/* background-color: rgba(53, 184, 151); */
-		background-image: url("../../images/bannerBack.jpg");
+		background-image: url("../../images/bannerback.jpg");
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3935,7 +3935,7 @@ body.is-ie header.majorBlack > h1:after {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/bannerBack.jpg");
+		background-image: url("../../images/bannerback.jpg");
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
