@@ -1,0 +1,280 @@
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 2px #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    height: 3.5em;
+    letter-spacing: 0.25em;
+    line-height: 3.5em;
+    padding: 0 1.75em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+    input[type="submit"]:hover, input[type="submit"]:active,
+    input[type="reset"]:hover,
+    input[type="reset"]:active,
+    input[type="button"]:hover,
+    input[type="button"]:active,
+    button:hover,
+    button:active,
+    .button:hover,
+    .button:active {
+        box-shadow: inset 0 0 0 2px #ffd86c;
+        color: #ffd86c;
+    }
+
+    input[type="submit"]:active,
+    input[type="reset"]:active,
+    input[type="button"]:active,
+    button:active,
+    .button:active {
+        background-color: #ffd86c;
+        box-shadow: inset 0 0 0 2px #ffd86c;
+        color: #ffd86c;
+    }
+
+    input[type="submit"].icon:before,
+    input[type="reset"].icon:before,
+    input[type="button"].icon:before,
+    button.icon:before,
+    .button.icon:before {
+        margin-right: 0.5em;
+    }
+
+    input[type="submit"].fit,
+    input[type="reset"].fit,
+    input[type="button"].fit,
+    button.fit,
+    .button.fit {
+        width: 100%;
+    }
+
+    input[type="submit"].small,
+    input[type="reset"].small,
+    input[type="button"].small,
+    button.small,
+    .button.small {
+        font-size: 0.6em;
+    }
+
+    input[type="submit"].large,
+    input[type="reset"].large,
+    input[type="button"].large,
+    button.large,
+    .button.large {
+        font-size: 1.25em;
+        height: 3em;
+        line-height: 3em;
+    }
+
+    /* next button */
+    input[type="submit"].next,
+    input[type="reset"].next,
+    input[type="button"].next,
+    button.next,
+    .button.next {
+        padding-right: 4em;
+        position: relative;
+    }
+
+        input[type="submit"].next:before, input[type="submit"].next:after,
+        input[type="reset"].next:before,
+        input[type="reset"].next:after,
+        input[type="button"].next:before,
+        input[type="button"].next:after,
+        button.next:before,
+        button.next:after,
+        .button.next:before,
+        .button.next:after {
+            -moz-transition: opacity 0.2s ease-in-out;
+            -webkit-transition: opacity 0.2s ease-in-out;
+            -ms-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            right: 1.7em;
+            top: .2em;
+            vertical-align: middle;
+            width: 36px;
+        }
+
+        input[type="submit"].next:hover:after, input[type="submit"].next:active:after,
+        input[type="reset"].next:hover:after,
+        input[type="reset"].next:active:after,
+        input[type="button"].next:hover:after,
+        input[type="button"].next:active:after,
+        button.next:hover:after,
+        button.next:active:after,
+        .button.next:hover:after,
+        .button.next:active:after {
+            opacity: 1;
+        }
+
+        input[type="submit"].next:before,
+        input[type="reset"].next:before,
+        input[type="button"].next:before,
+        button.next:before,
+        .button.next:before {
+            background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2221%22%20height%3D%2216%22%20viewBox%3D%220%200%2021%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M10.0896%2014.4005L10.0895%2014.4004L1.4704%202.61979C1.29975%202.38664%201.22063%202.09639%201.22063%201.82728C1.22063%201.56724%201.29141%201.27216%201.47302%201.03119C1.651%200.790015%201.92185%200.622056%202.2397%200.622056C2.55912%200.622056%202.83107%200.791674%203.009%201.03477L10.4572%2011.2058C10.657%2011.4786%2011.0643%2011.4785%2011.2641%2011.2057L18.7126%201.02954C18.8905%200.786441%2019.1625%200.616823%2019.4819%200.616823C19.8013%200.616823%2020.0733%200.786441%2020.2512%201.02954C20.4257%201.26801%2020.5%201.55681%2020.5%201.82466C20.5%202.09251%2020.4257%202.38132%2020.2512%202.61979L11.6282%2014.4005C11.4502%2014.6436%2011.1783%2014.8132%2010.8589%2014.8132C10.5395%2014.8132%2010.2675%2014.6436%2010.0896%2014.4005Z%22%20fill%3D%22white%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+        }
+
+        input[type="submit"].next:after,
+        input[type="reset"].next:after,
+        input[type="button"].next:after,
+        button.next:after,
+        .button.next:after {
+            background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2221%22%20height%3D%2216%22%20viewBox%3D%220%200%2021%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M10.0896%2014.4005L10.0895%2014.4004L1.4704%202.61979C1.29975%202.38664%201.22063%202.09639%201.22063%201.82728C1.22063%201.56724%201.29141%201.27216%201.47302%201.03119C1.651%200.790015%201.92185%200.622056%202.2397%200.622056C2.55912%200.622056%202.83107%200.791674%203.009%201.03477L10.4572%2011.2058C10.657%2011.4786%2011.0643%2011.4785%2011.2641%2011.2057L18.7126%201.02954C18.8905%200.786441%2019.1625%200.616823%2019.4819%200.616823C19.8013%200.616823%2020.0733%200.786441%2020.2512%201.02954C20.4257%201.26801%2020.5%201.55681%2020.5%201.82466C20.5%202.09251%2020.4257%202.38132%2020.2512%202.61979L11.6282%2014.4005C11.4502%2014.6436%2011.1783%2014.8132%2010.8589%2014.8132C10.5395%2014.8132%2010.2675%2014.6436%2010.0896%2014.4005Z%22%20fill%3D%22%2353E3FB%22%20stroke%3D%22%2353E3FB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+            opacity: 0;
+            z-index: 1;
+        }
+        /* download button  */
+
+        input[type="submit"].download,
+        input[type="reset"].download,
+        input[type="button"].download,
+        button.download,
+        .button.download {
+            padding-right: 4.5em;
+            position: relative;
+        }
+
+        input[type="submit"].download:before, input[type="submit"].download:after,
+        input[type="reset"].download:before,
+        input[type="reset"].download:after,
+        input[type="button"].download:before,
+        input[type="button"].download:after,
+        button.download:before,
+        button.download:after,
+        .button.download:before,
+        .button.download:after {
+            -moz-transition: opacity 0.2s ease-in-out;
+            -webkit-transition: opacity 0.2s ease-in-out;
+            -ms-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: 36px 24px;
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            right: 1.5em;
+            top: 0;
+            vertical-align: middle;
+            width: 36px;
+        }
+
+        input[type="submit"].download:hover:after, input[type="submit"].download:active:after,
+        input[type="reset"].download:hover:after,
+        input[type="reset"].download:active:after,
+        input[type="button"].download:hover:after,
+        input[type="button"].download:active:after,
+        button.download:hover:after,
+        button.download:active:after,
+        .button.download:hover:after,
+        .button.download:active:after {
+            opacity: 1;
+        }
+
+        input[type="submit"].download:before,
+        input[type="reset"].download:before,
+        input[type="button"].download:before,
+        button.download:before,
+        .button.download:before {
+            background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2242%22%20height%3D%2245%22%20viewBox%3D%220%200%2042%2045%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M13.1623%2018.4885C12.6643%2018.9864%2012.6643%2019.785%2013.1623%2020.2829L19.8888%2027.0094C20.133%2027.2537%2020.4618%2027.3852%2020.7813%2027.3852C21.1007%2027.3852%2021.4295%2027.263%2021.6737%2027.0094L28.4002%2020.2829C28.8982%2019.785%2028.8982%2018.9864%2028.4002%2018.4885C27.9023%2017.9906%2027.1038%2017.9906%2026.6059%2018.4885L22.0495%2023.0449V1.26827C22.0495%200.563674%2021.4858%200%2020.7813%200C20.0767%200%2019.513%200.563674%2019.513%201.26827V23.0449L14.9566%2018.4885C14.4587%2017.9906%2013.6508%2017.9906%2013.1623%2018.4885Z%22%20fill%3D%22white%22%2F%3E%0A%3Cpath%20d%3D%22M41.5146%2028.8789L37.0992%2012.9082C36.9958%2012.5418%2036.7422%2012.2505%2036.404%2012.0908L36.2818%2012.0345C36.1127%2011.9593%2035.9342%2011.9217%2035.7557%2011.9217H27.7985C27.0939%2011.9217%2026.5303%2012.4854%2026.5303%2013.19C26.5303%2013.8946%2027.0939%2014.4583%2027.7985%2014.4583H34.9008L38.6305%2027.9677H28.7662C28.0616%2027.9677%2027.4979%2028.5313%2027.4979%2029.2359V30.3821C27.4979%2032.0637%2026.1357%2033.4259%2024.4541%2033.4259H16.7129C15.0313%2033.4259%2013.6691%2032.0637%2013.6691%2030.3821V29.2359C13.6691%2028.5313%2013.1054%2027.9677%2012.4008%2027.9677H2.92171L6.67015%2014.4301H13.7724C14.477%2014.4301%2015.0407%2013.8664%2015.0407%2013.1618C15.0407%2012.4572%2014.477%2011.8936%2013.7724%2011.8936H5.80585C5.62735%2011.8936%205.44885%2011.9311%205.27975%2012.0063L5.15762%2012.0627C4.81942%2012.2224%204.55637%2012.5136%204.46242%2012.88L0.0469729%2028.8508C0.0187891%2028.9635%200%2029.0762%200%2029.189V35.8497C0%2040.8946%204.10543%2045%209.15031%2045H32.4113C37.4562%2045%2041.5616%2040.8946%2041.5616%2035.8497V29.2171C41.5616%2029.095%2041.5522%2028.9823%2041.5146%2028.8789ZM39.0251%2035.8497C39.0251%2039.4948%2036.0564%2042.4635%2032.4113%2042.4635H9.15031C5.50522%2042.4635%202.53653%2039.4948%202.53653%2035.8497V30.5042H11.1514C11.2171%2033.5199%2013.6973%2035.9531%2016.7317%2035.9531H24.4729C27.5073%2035.9531%2029.9875%2033.5199%2030.0532%2030.5042H39.0438V35.8497H39.0251Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+        }
+
+        input[type="submit"].download:after,
+        input[type="reset"].download:after,
+        input[type="button"].download:after,
+        button.download:after,
+        .button.download:after {
+            background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2242%22%20height%3D%2245%22%20viewBox%3D%220%200%2042%2045%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M13.1623%2018.4885C12.6643%2018.9864%2012.6643%2019.785%2013.1623%2020.2829L19.8888%2027.0094C20.133%2027.2537%2020.4618%2027.3852%2020.7813%2027.3852C21.1007%2027.3852%2021.4295%2027.263%2021.6737%2027.0094L28.4002%2020.2829C28.8982%2019.785%2028.8982%2018.9864%2028.4002%2018.4885C27.9023%2017.9906%2027.1038%2017.9906%2026.6059%2018.4885L22.0495%2023.0449V1.26827C22.0495%200.563674%2021.4858%200%2020.7813%200C20.0767%200%2019.513%200.563674%2019.513%201.26827V23.0449L14.9566%2018.4885C14.4587%2017.9906%2013.6508%2017.9906%2013.1623%2018.4885Z%22%20fill%3D%22%2353E3FB%22%2F%3E%0A%3Cpath%20d%3D%22M41.5146%2028.8789L37.0992%2012.9082C36.9958%2012.5418%2036.7422%2012.2505%2036.404%2012.0908L36.2818%2012.0345C36.1127%2011.9593%2035.9342%2011.9217%2035.7557%2011.9217H27.7985C27.0939%2011.9217%2026.5303%2012.4854%2026.5303%2013.19C26.5303%2013.8946%2027.0939%2014.4583%2027.7985%2014.4583H34.9008L38.6305%2027.9677H28.7662C28.0616%2027.9677%2027.4979%2028.5313%2027.4979%2029.2359V30.3821C27.4979%2032.0637%2026.1357%2033.4259%2024.4541%2033.4259H16.7129C15.0313%2033.4259%2013.6691%2032.0637%2013.6691%2030.3821V29.2359C13.6691%2028.5313%2013.1054%2027.9677%2012.4008%2027.9677H2.92171L6.67015%2014.4301H13.7724C14.477%2014.4301%2015.0407%2013.8664%2015.0407%2013.1618C15.0407%2012.4572%2014.477%2011.8936%2013.7724%2011.8936H5.80585C5.62735%2011.8936%205.44885%2011.9311%205.27975%2012.0063L5.15762%2012.0627C4.81942%2012.2224%204.55637%2012.5136%204.46242%2012.88L0.0469729%2028.8508C0.0187891%2028.9635%200%2029.0762%200%2029.189V35.8497C0%2040.8946%204.10543%2045%209.15031%2045H32.4113C37.4562%2045%2041.5616%2040.8946%2041.5616%2035.8497V29.2171C41.5616%2029.095%2041.5522%2028.9823%2041.5146%2028.8789ZM39.0251%2035.8497C39.0251%2039.4948%2036.0564%2042.4635%2032.4113%2042.4635H9.15031C5.50522%2042.4635%202.53653%2039.4948%202.53653%2035.8497V30.5042H11.1514C11.2171%2033.5199%2013.6973%2035.9531%2016.7317%2035.9531H24.4729C27.5073%2035.9531%2029.9875%2033.5199%2030.0532%2030.5042H39.0438V35.8497H39.0251Z%22%20fill%3D%22%2353E3FB%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+            opacity: 0;
+            z-index: 1;
+        }
+        
+
+        @media screen and (max-width: 1280px) {
+
+            input[type="submit"].next,
+            input[type="reset"].next,
+            input[type="button"].next,
+            button.next,
+            .button.next {
+                padding-right: 5em;
+            }
+
+        }
+
+    input[type="submit"].primary,
+    input[type="reset"].primary,
+    input[type="button"].primary,
+    button.primary,
+    .button.primary {
+        background-color: #ffffff;
+        box-shadow: none;
+        color: black;
+    }
+
+        input[type="submit"].primary:hover, input[type="submit"].primary:active,
+        input[type="reset"].primary:hover,
+        input[type="reset"].primary:active,
+        input[type="button"].primary:hover,
+        input[type="button"].primary:active,
+        button.primary:hover,
+        button.primary:active,
+        .button.primary:hover,
+        .button.primary:active {
+            background-color: #ffd86c;
+            color: black !important;
+        }
+
+        input[type="submit"].primary:active,
+        input[type="reset"].primary:active,
+        input[type="button"].primary:active,
+        button.primary:active,
+        .button.primary:active {
+            background-color: #ffd86c;
+        }
+
+    input[type="submit"].disabled, input[type="submit"]:disabled,
+    input[type="reset"].disabled,
+    input[type="reset"]:disabled,
+    input[type="button"].disabled,
+    input[type="button"]:disabled,
+    button.disabled,
+    button:disabled,
+    .button.disabled,
+    .button:disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.25;
+    }
