@@ -801,7 +801,7 @@ input, select, textarea {
         -ms-transition: opacity 1.5s ease, -ms-transform 1.5s ease-out, -ms-filter 1.5s ease, -webkit-filter 1.5s ease;
         transition: opacity 1.5s ease, transform 1.5s ease-out, filter 1.5s ease, -webkit-filter 1.5s ease;
         top: 7em;
-        background-color: white;
+        background-color: transparent;
         color: black !important;
         position: relative;
         z-index: 1;
@@ -810,7 +810,9 @@ input, select, textarea {
         padding: 1em;
         z-index: 2;
         text-align: center;
-        border-radius:16px;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
     }
 .p1:after {
         content: '';
@@ -992,6 +994,251 @@ body.is-preload #main > .container {
 
 /* ----------------------------------------------THIS WILL STAY CONSISTENT FOR EVERY PAGE----------------------------------------------*/
 
+
+.property-description h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+.property-description p
+{
+  font-size: .8em;
+}
+
+.property-card
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  /* -webkit-box-shadow:  6px 10px 27px #333333, -6px -10px 27px #000000; */
+  box-shadow:  6px 10px 15px #333333    
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.col.span_1_of_3:nth-child(1) .property-image {
+    background-image:url("../../images/music.jpg");
+}
+.col.span_1_of_3:nth-child(2) .property-image {
+    background-image:url("../../images/media.jpg");
+}
+.col.span_1_of_3:nth-child(3) .property-image {
+    background-image:url("../../images/skiing.jpg");
+}
+.col.span_1_of_3:nth-child(4) .property-image {
+    background-image:url("../../images/biking.jpg");
+}
+.col.span_1_of_3:nth-child(5) .property-image {
+    background-image:url("../../images/travel.jpg");
+}
+.col.span_1_of_3:nth-child(6) .property-image {
+    background-image:url("../../images/food.jpg");
+}
+
+/* .property-image:nth-child(2) {
+    background-image:url("../../images/media.jpg");
+} */
+
+.property-card ul {
+    position:absolute;
+    bottom:-.5em;
+    left:1em;
+    width:1em;
+    height:1em;
+}
+.property-card li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    position: relative;
+}
+/* Spotify */
+.col.span_1_of_3:nth-child(1) .property-card ul li a:hover:before {
+    border-bottom-color: transparent;
+    background-color: #1DB954;
+    color: white ;
+    
+}
+.col.span_1_of_3:nth-child(1) .property-card ul li a:active:before {
+    color: #1DB954 ;
+    background-color: white;
+}
+
+/* Twitch */
+.col.span_1_of_3:nth-child(2) .property-card ul li a:hover:before {
+    background-color:#6441a5 ;
+    color: white ;
+    border-bottom-color: transparent;
+    
+}
+.col.span_1_of_3:nth-child(2) .property-card ul li a:active:before {
+    color: #6441a5 ;
+    background-color: white;
+}
+/* YouTube */
+.col.span_1_of_3:nth-child(3) .property-card ul li a:hover:before {
+    background-color:#FF0000 ;
+    color: white ;
+    border-bottom-color: transparent;
+    
+}
+.col.span_1_of_3:nth-child(3) .property-card ul li a:active:before {
+    color: #FF0000 ;
+    background-color: white;
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+/* Social Icons */
+
+/* .property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+} */
+
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+/* .property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+} */
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 5% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+    width: 32.2%;
+    justify-content: center;
+    display: flex;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 1050px) {
+	.col { margin: 3% 0 3% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 50%; }
+}
+@media only screen and (max-width: 760px) {
+    .col { margin: 3% 0 3% 0%;}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+/* Optional
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+
+*/
 
 /* INNER IS USED FOR FOOTER PADDING. THAT IS IT */
 

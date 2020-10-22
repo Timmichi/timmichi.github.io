@@ -302,86 +302,13 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	header.major {
-		width: -moz-max-content;
-		width: -webkit-max-content;
-		width: -ms-max-content;
-		width: max-content;
-		margin-bottom: 2em;
-	}
 
-		header.major > :first-child {
-			margin-bottom: 0;
-			width: calc(100% + 0.5em);
-		}
-
-			header.major > :first-child:after {
-				content: '';
-				background-color: #ffffff;
-				display: block;
-				height: 2px;
-				margin: 0.325em 0 0.5em 0;
-				width: 100%;
-			}
-
-		header.major > p {
-			font-size: 0.7em;
-			font-weight: 600;
-			letter-spacing: 0.25em;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
-
-		body.is-ie header.major > :first-child:after {
-			max-width: 9em;
-		}
-
-		body.is-ie header.major > h1:after {
-			max-width: 100% !important;
-		}
-		header.major {
-		width: -moz-max-content;
-		width: -webkit-max-content;
-		width: -ms-max-content;
-		width: max-content;
-		margin-bottom: 2em;
-	}
-
-		header.major > :first-child {
-			margin-bottom: 0;
-			width: calc(100% + 0.5em);
-		}
-
-			header.major > :first-child:after {
-				content: '';
-				background-color: #ffffff;
-				display: block;
-				height: 2px;
-				margin: 0.325em 0 0.5em 0;
-				width: 100%;
-			}
-
-		header.major > p {
-			font-size: 0.7em;
-			font-weight: 600;
-			letter-spacing: 0.25em;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
-
-		body.is-ie header.major > :first-child:after {
-			max-width: 9em;
-		}
-
-		body.is-ie header.major > h1:after {
-			max-width: 100% !important;
-		}
 header.major {
 		width: -moz-max-content;
 		width: -webkit-max-content;
 		width: -ms-max-content;
 		width: max-content;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 		header.major > :first-child {
@@ -389,14 +316,14 @@ header.major {
 			width: calc(100% + 0.5em);
 		}
 
-			header.major > :first-child:after {
+			/* header.major > :first-child:after {
 				content: '';
 				background-color: #ffffff;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
 				width: 100%;
-			}
+			} */
 
 		header.major > p {
 			font-size: 0.7em;
@@ -1159,7 +1086,7 @@ body.is-ie header.majorBlack > h1:after {
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
 		border: 0;
-		border-radius: 0;
+		border-radius: 8px;
 		box-shadow: inset 0 0 0 2px #ffffff;
 		color: #ffffff;
 		cursor: pointer;
@@ -1513,7 +1440,7 @@ body.is-ie header.majorBlack > h1:after {
 			} 
 
 			/* .tiles article:after {
-				background-color: white;
+				background-color: black;
 				opacity: 0.5;
 				content: '';
 				display: block;
@@ -1865,6 +1792,7 @@ body.is-ie header.majorBlack > h1:after {
 				display: inline-block;
 				line-height: 1.65em;
 				margin: 0;
+				border-radius: 6px;
 				margin-right: 0.325em;
 				padding: 0 0.125em 0 0.375em;
 			}
@@ -2095,7 +2023,7 @@ body.is-ie header.majorBlack > h1:after {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url(../../images/bannerback.jpg);
+		background-image: url(../../images/coding.png);
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2260,7 +2188,7 @@ body.is-ie header.majorBlack > h1:after {
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				background-image: url("../../images/bannerback.jpg");
+				background-image: url("../../images/coding.png");
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -2332,7 +2260,7 @@ body.is-ie header.majorBlack > h1:after {
 /* Main */
 	#main {
 		/* background-color: rgba(53, 184, 151); */
-		background-image: url("../../images/bannerback.jpg");
+		background-image: url("../../images/coding.png");
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -2426,7 +2354,7 @@ body.is-ie header.majorBlack > h1:after {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/bannerback.jpg");
+		background-image: url("../../images/coding.png");
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
