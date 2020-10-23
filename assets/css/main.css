@@ -917,7 +917,7 @@ body.is-ie header.majorBlack > h1:after {
 		input[type="button"].next,
 		button.next,
 		.button.next {
-			padding-right: 1.1em;
+			padding-right: 1.14em;
 			position: relative;
 			height: 2em;
 		}
