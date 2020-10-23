@@ -875,6 +875,14 @@ body.is-preload #main > .container {
     transform: translateX(-0.5em);
     opacity: 0;
 }
+@media screen and (max-width:500px) {
+
+    #main > .container {
+        width: 100%;
+    }
+
+}
+
 
 /* Spotlights */
 
@@ -1051,7 +1059,7 @@ border-top: 0 !important;
   border-radius:16px;
   overflow:hidden;
   /* -webkit-box-shadow:  6px 10px 27px #333333, -6px -10px 27px #000000; */
-  box-shadow:  2px 6px 15px #181818   /* last number is the blur */
+  box-shadow:  2px 6px 15px #2c2c2c   /* last number is the blur */
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
@@ -1070,6 +1078,7 @@ border-top: 0 !important;
   background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
   background-size:cover;
   background-repeat:no-repeat;
+  cursor: default;
 }
 
 .col.span_1_of_3:nth-child(1) .property-image1 {
