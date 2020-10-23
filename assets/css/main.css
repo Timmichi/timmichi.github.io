@@ -456,9 +456,9 @@ body.is-ie header.majorBlack > h1:after {
 		}
 
 		.icon.alt:before {
-			background-color: #ffffff;
+			background-color: black;
 			border-radius: 100%;
-			color: black;
+			color: white;
 			display: inline-block;
 			height: 2em;
 			line-height: 2em;
