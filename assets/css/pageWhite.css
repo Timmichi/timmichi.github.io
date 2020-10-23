@@ -841,14 +841,14 @@ ul.actions {
         text-align: center;
         border-radius:16px;
     }
-.p1:after {
+/* .p1:after {
         content: '';
-        background-color: black;
+        background-color:white;
         display: block;
         height: 2px;
         margin: 2em 0 0.5em 0;
         width: 100%;
-			} 
+			}  */
     #main:after {
         -moz-transition: opacity 2.5s ease;
         -webkit-transition: opacity 2.5s ease;
@@ -1051,7 +1051,7 @@ border-top: 0 !important;
   border-radius:16px;
   overflow:hidden;
   /* -webkit-box-shadow:  6px 10px 27px #333333, -6px -10px 27px #000000; */
-  box-shadow:  2px 8px 15px #333333    /* last number is the blur */
+  box-shadow:  2px 6px 15px #181818   /* last number is the blur */
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
@@ -1146,7 +1146,7 @@ border-top: 0 !important;
 
 .property-description
 {
-  background-color: #FAFAFC;
+  background-color: black;
   height:12em;
   width:14em;
   position:absolute;
@@ -1157,7 +1157,10 @@ border-top: 0 !important;
   padding: 0.5em 1em;
   text-align:center;
 }
-
+.property-description h5 {
+    margin-top: .2em;
+    font-family: "Calibre";
+}
 .property-card:hover .property-description
 {
   height:0em;
